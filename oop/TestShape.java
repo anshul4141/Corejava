@@ -6,7 +6,7 @@ public class TestShape {
 		
 		Shape s = new Shape("red",89);
 		
-		System.out.println(s.PI);
+		//System.out.println(s.PI);
 		System.out.println(Shape.PI);
 		
 		

@@ -1,6 +1,6 @@
 package com.reystech.oop;
 
-public class Shape2 {
+public abstract class Shape2 {
 	private String color;
 	private int borderwidth;
 	public static final double PI = 3.14;
@@ -17,6 +17,6 @@ public class Shape2 {
 	public void setBorderwidth(int borderwidth) {
 		this.borderwidth = borderwidth;
 	}
-	public double area() {return 0;}
+	public abstract double area();
 
 }

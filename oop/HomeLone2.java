@@ -5,8 +5,8 @@ public class HomeLone2 {
 		for (int i = 1; i < 4; i++) {
 			Bank b = Bank.getBank(i);
 			
-			System.out.println(b.getName());
-			System.out.println(b.interestRate());
+			System.out.println("Bank Name = " + b.getName());
+			System.out.println("Interest Rate = " + b.interestRate());
 			System.out.println("------------------");
 			
 			

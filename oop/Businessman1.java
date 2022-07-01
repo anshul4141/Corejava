@@ -14,21 +14,24 @@ public class Businessman1 implements Richman, SocialWorker {
 		return 6000;
 	
 	}
-    public int party() {
-		return 20000;
+    public void party() {
+		System.out.println("MAJA NI LIFE");
 		
 	}
 	public static void main(String[] args) {
 		Businessman1 bs = new Businessman1();
 		
-	System.out.println(bs.helptoOthers());
+	System.out.println("{SocialWorker} = " + bs.helptoOthers());
 	System.out.println("********");
-	System.out.println(bs.earnMoney());
+	System.out.println("Total Earn Money = " + bs.earnMoney());
 	System.out.println("********");
-	System.out.println(bs.donation());
+	System.out.println("Money for Donation " + bs.donation());
 	System.out.println("********");
-	System.out.println(bs.party());
+	bs.party();
+	
 	}
+	
 }
+
 
     

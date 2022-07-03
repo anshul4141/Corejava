@@ -10,15 +10,12 @@ public class Person {
 		lastName = la;
 		
 	}
-	@Override
 	public String toString() {
-		// TODO Auto-generated method stub
 		return firstName+lastName;
 	}
 	public static void main(String[] args) {
-		Person p = new Person("anshul ", "prajapati");
 		
-		System.out.println(p.toString());
+		
 	}
 
 }

@@ -23,11 +23,13 @@ public class TotalArea {
 		
 		double total = 0.0;
 		for (int i = 0; i < s1.length; i++) {
-
+			double d = s1[i].area();
+			System.out.println(d); 
 			total = total + s1[i].area();
 
 		}
 		System.out.println("{Total Area} = " + total);
+		
 
 		
 	}

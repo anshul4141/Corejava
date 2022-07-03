@@ -7,7 +7,7 @@ public class Boy extends Human {
 		
 	}
 	public static void main(String[] args) {
-		Boy a = new Boy();
+		//Boy a = new Boy();
 		
 		Boy.eat();
 	}

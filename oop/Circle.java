@@ -1,6 +1,6 @@
 package com.reystech.oop;
 
-public class Circle extends Shape2 {
+public  class Circle extends Shape2 {
 	private int radius;
 
 	public int getRadius() {
@@ -10,10 +10,12 @@ public class Circle extends Shape2 {
 	public void setRadius(int radius) {
 		this.radius = radius;
 	}
-	
+
 	public double area() {
 		return PI*radius*radius;
 	}
+	
+	
 	
 
 }

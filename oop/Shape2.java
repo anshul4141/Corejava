@@ -1,6 +1,6 @@
 package com.reystech.oop;
 
-public abstract class Shape2 {
+public abstract  class Shape2 {
 	private String color;
 	private int borderwidth;
 	public static final double PI = 3.14;

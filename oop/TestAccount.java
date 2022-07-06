@@ -1,23 +1,19 @@
 package com.reystech.oop;
 
+import com.raystec.exceptionHandling.LoginExeption;
+
 public class TestAccount {
-	public static void main(String[] args) {
-		Account a = new Account("0100050004545", "saving", 20000);
+	public static void main(String[] args) throws LoginExeption  {
+		Account a = new Account();
 		
 		
-		System.out.println(a.getNumber());
-		System.out.println(a.getType());
+		a.setBalance(2000);
 		System.out.println(a.getBalance());
-		a.deposite(5000);
-		System.out.println("After Deposit= " + a.getBalance());
-		a.withdrawl(2000);
-		System.out.println("After withdrawl= " + a.getBalance());
-		a.fundtransfer(3000);
-		System.out.println("After fundtrans= " + a.getBalance());
-		a.paybill(500);
-		System.out.println("After paybill= " + a.getBalance());
 		
-		System.out.println("Present Balance= " + a.getBalance());
+		a.withdrwl(5000);
+		System.out.println(a.getBalance());
+		
+		
 		
 		
 		

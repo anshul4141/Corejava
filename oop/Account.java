@@ -1,49 +1,43 @@
 package com.reystech.oop;
 
+import com.raystec.exceptionHandling.LoginExeption;
+
 public class Account {
 	private String number;
 	private String type;
 	private double balance;
-	
-	public Account() {
-		
-		
-	}
-	
-	public Account(String n, String t, double b ) {
-		number = n;
-		type = t;
-		balance = b;
-	}
 	public String getNumber() {
 		return number;
+	}
+	public void setNumber(String number) {
+		this.number = number;
 	}
 	public String getType() {
 		return type;
 	}
-
+	public void setType(String type) {
+		this.type = type;
+	}
 	public double getBalance() {
 		return balance;
 	}
-
-	public void deposite(double d) {
-	  balance = balance+d;
-		
+	public void setBalance(double balance) {
+		this.balance = balance;
 	}
-	public void withdrawl(double w) {
-		balance= balance- w;
-	}
-	
-	public void fundtransfer (double f) {
-		balance = balance -f;
-		
-	}
-	public void paybill (double p) {
-		balance = balance -p;
-		
+	public void withdrwl(double w) throws LoginExeption{
+		if (getBalance()>w) {
+			double total = getBalance()-w;
+			setBalance(total);
+		} else {
+			throw new LoginExeption("Insufficent balance");
+		}
 	}
 	
+	
+		
 }
+	
+
 	
 	
 

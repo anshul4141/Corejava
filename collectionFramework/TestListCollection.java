@@ -7,7 +7,6 @@ import java.util.List;
 public class TestListCollection {
 	
 
-	@SuppressWarnings({ "unchecked", "rawtypes" })
 	public static void main(String[] args) {
 		
 		
@@ -22,9 +21,15 @@ public class TestListCollection {
 		s1.add("KGF");    
 	//	s1.lastIndexOf(22.5)
 	//	System.out.println(s1.lastIndexOf(22.5));
+        System.out.println(s1.subList(0, 3));
+        System.out.println("---------------");
         int a = s1.lastIndexOf(22);
         System.out.println(a);
-		System.out.println("s1 elements = " + s1);
+        System.out.println("---------------");
+        System.out.println("s1 elements = " + s1);
+        System.out.println("---------------");
+        s1.set(2, 55);
+        System.out.println("set 55 in index no of 2" + s1);
 		System.out.println("---------------");
 		System.out.println("size of s1 elements: " + s1.size());
 		System.out.println("---------------");

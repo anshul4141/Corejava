@@ -15,12 +15,12 @@ public class TestSet {
 		Set s = new HashSet();  //HashSet is'nt print sequence wise
 		Set i = Collections.synchronizedSet(s);
 		
-		s.add(1);
-		s.add(5.2);
-		s.add('a');
-		s.add("Anshul");
+		i.add(1);
+		i.add(5.2);
+		i.add('a');
+		i.add("Anshul");
 		
-		System.out.println(s);
+		System.out.println(i);
 		System.out.println("---------------");
 		
 		Set s1 = new LinkedHashSet();  //LinkedHashSet print insertion

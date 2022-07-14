@@ -8,20 +8,24 @@ import java.io.IOException;
 public class TestFiles2 {
 	
 	public static void main(String[] args) throws Exception {
-		File f = new File("C:\\Users\\dell\\Desktop\\Concept.txt");
-		FileReader fr = new FileReader(f);
+	
+		FileReader fr = new FileReader("C:\\Users\\dell\\Desktop\\Concept.txt");
 		
-		int c = fr.read();
+		int c = fr.read();          //Create an object integer and hold read method
 		
-		char ch;
+		System.out.println(c);      //This Print By binary
+		System.out.println("-----------");
+	
+		char ch;                    //Create an object of char
 		
 		while (c != -1) {
 			
-			ch = (char) c;
+			ch = (char) c;          //Type cast in char
 			System.out.print(ch);
 			c=fr.read();
 			
 		}
+		
 	}
 
 }

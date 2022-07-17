@@ -1,4 +1,4 @@
-package com.raystec.oi;
+package com.raystec.io;
 
 import java.io.FileWriter;
 import java.io.IOException;
@@ -8,17 +8,17 @@ public class TestWtire {
 	
 	public static void main(String[] args) throws Exception {
 		
-		FileWriter w = new FileWriter("C:\\Users\\dell\\Desktop\\newtest.txt", true);
+		FileWriter w = new FileWriter("C:\\Users\\dell\\Desktop\\newtest5.txt", true);
 		PrintWriter p = new PrintWriter(w);
 		
 		//for (int i = 0; i < 10; i++) {
 			
 		//	p.println(i+ ":Line");
 		
-		p.println("prajapati");
-		p.println("prajapati");
-		p.println("prajapati");
-		p.println("prajapati");
+		p.println("anshul");
+		p.println("anshul");
+		p.println("anshul");
+		p.println("anshul");
 			
 		
 			

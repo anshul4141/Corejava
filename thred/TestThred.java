@@ -14,6 +14,12 @@ public class TestThred extends Thread {
 	}
 	public void run() {
 		for (int i = 0; i < 50; i++) {
+			try {
+				Thread.sleep(200);
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
 			System.out.println(i + name);
 			
 		}
@@ -21,7 +27,7 @@ public class TestThred extends Thread {
 		TestThred t = new TestThred("Anshul");
 		TestThred t1 = new TestThred("Pubg");
 		t.start();
-		System.out.println("m nai janta kon h niche");
+//		System.out.println("m nai janta kon h niche");
 		t1.start();
 		
 			}

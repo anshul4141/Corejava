@@ -1,7 +1,6 @@
-package com.raystec.oi;
+package com.raystec.io;
 
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 
 public class CopyImage {

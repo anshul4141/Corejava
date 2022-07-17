@@ -1,7 +1,8 @@
-package com.raystec.oi;
+package com.raystec.io;
 
 import java.io.Serializable;
 
+@SuppressWarnings("serial")
 public class Employee implements Serializable {
 	
 	private int id;

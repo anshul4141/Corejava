@@ -4,8 +4,11 @@ public class TestRunnable extends TestThred implements Runnable {
 	
 	String name;
 	
-	public TestRunnable (String n) {
+	public TestRunnable() {
 		
+	}
+	
+	public TestRunnable (String n) {
 		name = n;
 		
 	}
@@ -13,6 +16,12 @@ public class TestRunnable extends TestThred implements Runnable {
 	@Override
 	public void run() {
 		for (int i = 0; i < 50; i++) {
+			try {
+				Thread.sleep(400);
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
 			System.out.println(i + name);
 			
 		}

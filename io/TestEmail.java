@@ -1,6 +1,6 @@
-package com.raystec.oi;
+package com.raystec.io;
 
-import java.io.FileNotFoundException;
+
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.PrintWriter;
@@ -10,8 +10,11 @@ public class TestEmail {
 	
 	public static void main(String[] args) throws Exception {
 		
-	FileReader s = new FileReader("C:\\Users\\dell\\Desktop\\email.txt") ;
-	FileWriter t = new FileWriter("C:\\Users\\dell\\Desktop\\enail11.txt") ;
+		String source = "C:\\Users\\dell\\Desktop\\email.txt";
+		String target = "C:\\Users\\dell\\Desktop\\enail11.txt";
+		
+	FileReader s = new FileReader(source) ;
+	FileWriter t = new FileWriter(target) ;
 	
 	PrintWriter p = new PrintWriter(t);
 	
@@ -28,14 +31,14 @@ public class TestEmail {
 		}
 		
 		
-	}s.close();
-	t.close();
+	}
 	p.close();
+	sc.close();
 	
 	System.out.println("Successfully");
 	
 	
-	
+	// Stephen Cole Kleene
 	
 	
 }

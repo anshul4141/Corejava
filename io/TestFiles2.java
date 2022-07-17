@@ -1,4 +1,4 @@
-package com.raystec.oi;
+package com.raystec.io;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -24,7 +24,7 @@ public class TestFiles2 {
 			System.out.print(ch);
 			c=fr.read();
 			
-		}
+		}fr.close();
 		
 	}
 

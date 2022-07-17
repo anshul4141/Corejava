@@ -1,10 +1,11 @@
-package com.raystec.oi;
+package com.raystec.io;
 
 import java.io.FileInputStream;
 import java.io.ObjectInputStream;
 
 public class ReadSerialization {
 	
+	@SuppressWarnings("resource")
 	public static void main(String[] args) throws Exception {
 		
 		FileInputStream file = new FileInputStream("C:\\Users\\dell\\Desktop\\Serialization.ser");

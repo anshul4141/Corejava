@@ -1,4 +1,4 @@
-package com.raystec.oi;
+package com.raystec.io;
 
 import java.io.FileOutputStream;
 import java.io.ObjectOutputStream;

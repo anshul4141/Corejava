@@ -1,4 +1,4 @@
-package com.raystec.oi;
+package com.raystec.io;
 
 import java.io.BufferedReader;
 import java.io.FileWriter;
@@ -7,7 +7,7 @@ import java.io.PrintWriter;
 
 
 
-public class TesCmd {
+public class PrintByConsole {
 	
 	public static void main(String[] args) throws Exception {
 		
@@ -24,7 +24,7 @@ public class TesCmd {
 		BufferedReader br = new BufferedReader(i);
 		
 		String l = br.readLine();
-		while (!l.equals("BYY BYY")) {
+		while (!l.equals("Quit")) {
 		pw.println(l);
 		l = br.readLine();
 		

@@ -10,7 +10,7 @@ public class TestListCollection {
 	public static void main(String[] args) {
 		
 		
-		List s1 = new LinkedList<>();
+		List<Object> s1 = new LinkedList<>();
 		
 		s1.add(22);
 	//	System.out.println(s1);
@@ -39,7 +39,7 @@ public class TestListCollection {
 	//	s1.remove("KGF");              //For Remove object.
 	//	System.out.println(s1);
 		
-		List s2 = new ArrayList<>();
+		List<Object> s2 = new ArrayList<>();
 		
 		s2.add(45);
 	//	System.out.println(s2);

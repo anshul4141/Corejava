@@ -8,7 +8,7 @@ public class iteratorr {
 	
 	public static void main(String[] args) {
 		
-		List l = new ArrayList();
+		List<String> l = new ArrayList<String>();
 		
 		l.add("One");
 		l.add("Two");
@@ -16,16 +16,17 @@ public class iteratorr {
 		l.add("Four");
 		l.add("Five");
 		
-		Iterator it = l.iterator();
+		Iterator<String> it = l.iterator();
 		
 		while (it.hasNext()) {
 			
-			Object obj = (Object) it.next();
+			Object obj = it.next();
 			
 			System.out.println(obj);
 			it.remove();		
 			
-		}System.out.println("=========== " + l);
+		}
+		System.out.println("=========== " + l);
 		
 	}
 

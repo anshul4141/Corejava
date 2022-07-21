@@ -13,10 +13,11 @@ public class TestFiles2 {
 		
 		int c = fr.read();          //Create an object integer and hold read method
 		
-		System.out.println(c);      //This Print By binary
-		System.out.println("-----------");
-	
-		char ch;                    //Create an object of char
+//		while (c != -1 ) {
+//			System.out.println(c);  
+//			c = fr.read();
+//		}
+			char ch;                    //Create an object of char
 		
 		while (c != -1) {
 			

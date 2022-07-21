@@ -20,25 +20,22 @@ public class TestEmail {
 	
 	Scanner sc = new Scanner(s);
 	
-	String reg = "^([\\w\\-\\.]+)@((\\[([0-9]{1,3}\\.){3}[0-9]{1,3}\\])|(([\\w\\-]+\\.)+)([a-zA-Z]{2,4}))$";
+	String regex = "^([\\w\\-\\.]+)@((\\[([0-9]{1,3}\\.){3}[0-9]{1,3}\\])|(([\\w\\-]+\\.)+)([a-zA-Z]{2,4}))$";
 	
 	while (sc.hasNextLine()) {
+		Thread.sleep(200);
 		String email = (String) sc.nextLine();
 		
-		if(email.matches(reg)) {
+		if(email.matches(regex)) {
 			System.out.println(email);
 			p.println(email);
 		}
-		
 		
 	}
 	p.close();
 	sc.close();
 	
-	System.out.println("Successfully");
-	
-	
-	// Stephen Cole Kleene
+	System.out.println("Email cheaked successfully");
 	
 	
 }

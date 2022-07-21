@@ -20,6 +20,7 @@ public class Person {
 		
 	}
 	public static void main(String[] args) {
+		@SuppressWarnings("unused")
 		Person p = new Person("Rays ","Tec ","Indore");
 		
 		

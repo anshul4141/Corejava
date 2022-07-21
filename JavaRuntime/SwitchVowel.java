@@ -16,6 +16,9 @@ public class SwitchVowel {
 		case 'o':
 			System.out.println("it is vowel");
 			break;
+		case 'u':
+			System.out.println("it is vowel");
+			break;
 
 		default:
 			System.out.println("it is not vowel");

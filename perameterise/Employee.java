@@ -13,7 +13,8 @@ public class Employee extends Person {
 		System.out.println("3 perametar Employee " + designation);
 	}
 	public static void main(String[] args) {
-		Employee e = new Employee("Vijay ", "Jain ", "Developar ");
+		@SuppressWarnings("unused")
+		Employee e = new Employee("Vijay ", "Jain ", "Developar");
 	}
 	
 

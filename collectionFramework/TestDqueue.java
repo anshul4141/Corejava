@@ -7,7 +7,7 @@ public class TestDqueue {
 	
 	public static void main(String[] args) {
 		
-		Deque s = new ArrayDeque();
+		Deque<Integer> s = new ArrayDeque<Integer>();
 		
 		s.add(5);
 		s.add(11);

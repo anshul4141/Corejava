@@ -39,7 +39,7 @@ public class TestConstestant {
 		})).forEach(e -> System.out.println(e));
 		System.out.println("__________________");
 		
-		System.out.println("Display Winners");
+		System.out.println("winner winner chikan dinnar");
 		list.stream().map(e -> e.phone).filter(e -> e.length() == 10)
 		.distinct().collect(Collectors.collectingAndThen(Collectors.toList(), e -> {
 			Collections.shuffle(e);

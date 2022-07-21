@@ -12,11 +12,18 @@ public class TestFile4 {
 		
 		for (int i = 0; i < list.length; i++) {
 			
+			try {
+				Thread.sleep(400);
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			
 			File f = new File("C:\\Eclipse Workspace", list[i]);
 			
 			if(f.isFile()) {
 			
-			System.out.println((i+1)+ " : " +list[i]);
+			System.out.println(list[i]);
 			}
 		}
 		

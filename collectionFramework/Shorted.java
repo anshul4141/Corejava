@@ -8,7 +8,7 @@ public class Shorted {
 	
 	public static void main(String[] args) {
 		
-List s1 = new LinkedList<>();
+        List s1 = new LinkedList<>();
 		
 		s1.add(22);
 		s1.add(5);

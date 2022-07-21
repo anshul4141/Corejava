@@ -13,14 +13,15 @@ public class Account  {
 		balance = b;
 	}
 	
-   public synchronized void deposit(String nm, int amt) {
-	   // synchronized (this) {
+   public void deposit(String nm, int amt) {
+	  //  synchronized (this) {
 	    	int bal = getBalance() + amt;
 	    	setBalance(bal);
 	    	System.out.println(nm + " = " + bal);
 	    }
 	   
    }  
+   
 	
 	
 	

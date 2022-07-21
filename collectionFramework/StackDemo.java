@@ -9,7 +9,7 @@ public class StackDemo {
 		// TODO Auto-generated method stub
 		Stack<Character> st=new Stack<Character>();
 		Stack<Character> st1=new Stack<Character>();         
-		for(int i=65;i<=90;i++) {    //System.out.println((char)i);
+		for(int i=65;i<=90;i++) {   
 			
 			st.push((char)i);
 		}
